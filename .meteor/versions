@@ -40,6 +40,7 @@ mquandalle:jade-compiler@0.4.3
 mquandalle:stylus@1.1.1
 mrt:moment@2.8.1
 mrt:moment-timezone@0.2.1
+natestrauser:animate-css@3.2.6
 nemo64:bootstrap@3.3.4_2
 nemo64:bootstrap-data@3.3.4_1
 observe-sequence@1.0.6

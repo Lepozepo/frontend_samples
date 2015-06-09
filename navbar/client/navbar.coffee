@@ -5,3 +5,4 @@ Template.nav.helpers
 		if current_route and current_route is route
 			return "active"
 
+
