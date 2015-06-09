@@ -13,23 +13,24 @@ template(name="product")
 									strong.text-primary Massively Grumpy
 
 		br
-		div.container
+		div(itemscope itemtype="http://schema.org/Product").container
 			div.row
 				div.col-xs-6.col-xs-offset-3.col-sm-4.col-sm-offset-0
 					img.img-responsive(src="/carl.jpg")
 
 				div.col-xs-12.col-sm-8
-					h3(style="margin-bottom:0").product_name Carl
+					h3(style="margin-bottom:0" itemprop="name").product_name Carl (Pop! Vinyl)
 					div
 						small He's already angry at you
 					hr
 
-					p.text-justify Have you ever felt like you want to just start over in the South American wilderness but didn't want to leave your house behind? Well, we've all been there! But who has the guts to do such a thing? Carl Fredricksen, that's who. He hooked up a bunch of balloons to his house and flew the thing to a magical land with talking dogs and magical long-necked birds everyone thought were extinct. Living the dream, this Carl Fredricksen!
+					p(itemprop="description").text-justify Have you ever felt like you want to just start over in the South American wilderness but didn't want to leave your house behind? Well, we've all been there! But who has the guts to do such a thing? Carl Fredricksen, that's who. He hooked up a bunch of balloons to his house and flew the thing to a magical land with talking dogs and magical long-necked birds everyone thought were extinct. Living the dream, this Carl Fredricksen!
 
 					br
 					div.row
 						div.col-xs-6
-							h3(style="margin-top:0").text-center.product_price $20.00
+							meta(itemprop="priceCurrency" content="USD")
+							h3(style="margin-top:0" itemprop="price").text-center.product_price $20.00
 								small.text-warning (tax incl)
 
 						div.col-xs-6
