@@ -1,0 +1,23 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+insecure
+meteorhacks:flow-router
+mquandalle:jade
+coffeescript
+mquandalle:stylus
+momentjs:moment
+mrt:moment-timezone
+nemo64:bootstrap
+reactive-var
+xorax:multiple-callbacks
+tmeasday:publish-counts
+percolate:momentum
+less
+fastclick
+lepozepo:publish-with-relations
+meteorhacks:flow-layout

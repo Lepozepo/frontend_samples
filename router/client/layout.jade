@@ -1,0 +1,26 @@
+head
+	title Front End Code Samples
+	meta(charset="utf-8")
+	meta(name="apple-mobile-web-app-capable" content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style" content="black")
+	meta(name="format-detection" content="telephone=no")
+	meta(name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0")
+	link(rel="icon" href="/favicon.ico" type="image/png")
+	link(rel="apple-touch-icon-precomposed" sizes="144x144" href="/icon-72@2x.png")
+	link(rel="apple-touch-icon-precomposed" sizes="114x114" href="/icon@2x.png")
+	link(rel="apple-touch-icon-precomposed" sizes="72x72" href="/icon-72.png")
+	link(rel="apple-touch-icon-precomposed" href="/icon.png")
+
+
+body
+
+template(name="layout")
+	+Template.dynamic(template=nav)
+	+Template.dynamic(template=content)
+
+template(name="not_found")
+	div.valign-middle.whole-page
+		div
+			h1.text-center 404!
+			h3.text-center Page not found
+

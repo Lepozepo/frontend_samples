@@ -1,0 +1,38 @@
+template(name="nav")
+	nav#nav.navbar.navbar-default.navbar-static-top(role="navigation")
+		div.hidden-xs
+			div.container
+				ul.nav.navbar-nav
+					li(class="{{active 'dashboard'}}")
+						a(href="/dashboard")
+							i.fa.fa-home
+
+					li(class="{{active 'schedule'}}")
+						a(href="/schedule")
+							i.fa.fa-calendar
+
+					li(class="{{active 'pay'}}")
+						a(href="/pay")
+							i.fa.fa-usd
+
+					li(class="{{active 'hire'}}")
+						a(href="/hire")
+							i.fa.fa-group
+
+					li(class="{{active 'locations'}}")
+						a(href="/locations")
+							i.fa.fa-map-marker
+
+				ul.nav.navbar-nav.navbar-right
+					li(class="{{active 'profile'}}")
+						a(href="/profile")
+							i.fa.fa-cog
+
+		div.visible-xs
+			div.container
+				ul.nav.navbar-nav.navbar-right
+					li(class="{{active 'menu'}}")
+						a(href="/menu")
+							i.fa.fa-bars
+
+
