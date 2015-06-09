@@ -1,0 +1,125 @@
+/* Main body */
+html,body
+	overflow-x: hidden
+	min-height: 100%
+
+
+//Careful with this
+input, .form-group
+	position:relative
+//
+
+/* Bootstrap Override */
+//Fix and Add Button Styles
+button, a
+	outline:none !important
+
+//list-group-feedback
+.list-group-feedback
+	display:inline-block
+	float:right
+
+.hidden-submit
+	position:absolute
+	border: 0 none
+	height: 0
+	width: 0
+	padding: 0
+	margin: 0
+	overflow: hidden
+
+.btn
+	border: none
+	position:relative
+
+	input[type='file']
+		-moz-opacity: 0
+		-khtml-opacity: 0
+		opacity: 0
+		-ms-filter:unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=0)")
+		filter: unquote("progid:DXImageTransform.Microsoft.Alpha(opacity=0)")
+		filter: unquote("alpha(opacity=0)")
+		position:absolute
+		top:0
+		bottom:0
+		width:100%
+		left:0
+		right:0
+
+	&.btn-lg
+		font-size:14px
+
+select.btn
+	-moz-appearance: none
+	//Moz workaround to fully remove caret
+	text-indent: 0.01px
+	text-overflow: ''
+	-webkit-appearance: none
+	-khtml-appearance:none
+	-o-appearance:none
+	appearance: none
+	text-align: left
+	width:100%
+
+.container > .navbar-header
+	margin-left: 0
+	margin-right: 0
+
+//Add new vertical positioning class
+.valign-middle
+	position:absolute
+	width: 100%
+	height: 100%
+	display: table
+	overflow-x:hidden
+	> *
+		display: table-cell
+		vertical-align: middle
+	&.whole-page
+		top:0
+
+
+//Add new pagination class
+.flow-x
+	overflow-x:auto
+	overflow-y:hidden
+	-webkit-overflow-scrolling:touch
+
+	white-space:nowrap
+	.btn-group
+		white-space:nowrap
+		button
+			width:40px
+			float:none
+	
+	&::-webkit-scrollbar
+		display:none
+
+//Remove rounded corners
+input, textarea
+	box-shadow: none !important
+	-webkit-box-shadow:none !important
+	border-radius: 0px !important
+	-webkit-appearance:none
+	&[type="checkbox"]
+		-webkit-appearance:checkbox
+
+	&[type="radio"]
+		-webkit-appearance:radio
+
+
+//Input Groups
+span.input-group-addon
+	border:0px
+	color:white
+	border-radius: 0px
+
+
+//Make sure textareas don't get out of bounds and become unreachable
+textarea
+	resize:none
+	width: 100% !important
+
+#nav
+	border:none
+
