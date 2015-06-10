@@ -1,4 +1,62 @@
 template(name="complex_form")
-	h3.text-center Complex Form
+	div#form.container
+		div.row
+			div.col-xs-12.col-sm-8.col-sm-offset-2
+				h3 Profile
+				hr
+
+		div.row
+			div.col-xs-12.col-sm-8.col-sm-offset-2
+				with completed_form
+					form.form
+						div.row
+							div.col-xs-12.col-sm-6
+								label First Name
+								div.form-group
+									input#first.highlight_on_click.input-lg.form-control(type="text" placeholder="First Name" autocapitalize="off" autocorrect="off" autocomplete="off" value="{{first}}")
+
+							div.col-xs-12.col-sm-6
+								label Last Name
+								div.form-group
+									input#last.highlight_on_click.input-lg.name.form-control(type="text" placeholder="Last Name" autocapitalize="off" autocorrect="off" autocomplete="off" value="{{last}}")
+
+
+						div.row
+							div.col-xs-12
+								label Timezone
+								div.form-group
+									input#timezone.highlight_on_click.input-lg.form-control(type="text" placeholder="Timezone or city" autocapitalize="off" autocorrect="off" autocomplete="off" value="{{timezone}}")
+									span(style="pointer-events:auto; cursor:pointer;").identify_timezone.form-control-feedback.fa.fa-location-arrow
+
+								div.list-group
+									each timezones
+										a(href="#").timezone.list-group-item {{timezone}}
+
+						div.row
+							div.col-xs-12
+								label Gender
+								div.list-group
+									if $eq gender "male"
+										div.gender.list-group-item.active(value="male")
+											| Male
+											div.list-group-feedback
+												i.fa.fa-check
+									else
+										div.gender.list-group-item(value="male") Male
+
+									if $eq gender "female"
+										div.gender.list-group-item.active(value="female")
+											| Female
+											div.list-group-feedback
+												i.fa.fa-check
+									else
+										div.gender.list-group-item(value="female") Female
+
+						div.row
+							div.col-xs-12
+								button.btn.btn-block.btn-primary.btn-lg Submit
+
+
+
 
 
